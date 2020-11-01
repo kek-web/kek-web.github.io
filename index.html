@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Расписание Пинф 19</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <div class="preloader">
+      <div class="preloader_wrap">
+        <div class="preloader__first"></div>
+        <div class="preloader__second"></div>
+        <div class="preloader__third"></div>
+      </div>
+    </div>
+
+    <h1>Расписание</h1>
+    <p class="clock">00:00:00</p>
+    <p style="font-weight: 700; font-size: 20px;">Неделя:</p>
+    <select name="week" id="week">
+      <option value="both">Выбери неделю</option>
+      <option value="top-only">Верхняя</option>
+      <option value="bottom-only">Нижняя</option>
+    </select>
+    <table id="schedule" class="table table-bordered">
+      <tbody>
+        <thead class="thead-light">
+          <tr>
+            <th class="days" colspan="2">Понедельник</th>
+          </tr>
+        </thead>
+        <tr>
+          <th class="time table-secondary">Время</th>
+          <th align="left" class="table-secondary">Предметы</th>
+        </tr>
+    
+        <tr>
+          <th rowspan="2" class="table-light">08:30 - 10:00</th>
+          <td class="first-subj">Теория вероятностей и математическая статистика (сем.) </br>Кудрявцев А.А. ауд.704</td>
+        </tr>
+        <tr>
+          <td class="double-subj">Математическое и имитационное моделирование (сем.) <br>Червякова Е.В. ауд 704</td>
+        </tr>
+        <tr>
+          <th class="table-light">10:15 - 11:45</th>
+          <td class="">Информационная безопасность (лекц.) <br>Семичастный И.В. ауд 702/1</td>
+        </tr>
+        <tr>
+          <th rowspan="2" class="table-light">12:10 - 13:40</th>
+          <td class="first-subj">Математическое и имитационное моделирование (сем.) <br>Червякова Е.В. ауд 602</td>
+        </tr>
+        <tr>
+          <td class="double-subj">Электронный бизнес на международном рынке товаров и услуг (лекц.)<br>Семичастный И.Л. ауд 607/1</td>
+        </tr>
+        <tr>
+          <th rowspan="2" class="table-light">13:55 - 15:25</th>
+          <td class="first-subj">Система поддержки принятия решений (лекц.)<br>Петренко И.В. ауд 602/1</td>
+        </tr>
+        <tr>
+          <td class="double-subj">Теория вероятностей и математическая статистика (сем.) <br>Кудрявцев А.А. ауд 607/1</td>
+        </tr>
+        <thead class="thead-light">
+          <tr>
+
+            <th class="days" colspan="2">Вторник</th>
+          </tr>
+        </thead>
+        <tr>
+          <th rowspan="2" class="table-light">08:30 - 10:00</th>
+          <td class="first-subj">Системы поддержки принятия решений (практ.) <br>Петренко И.В. ауд 702/1</td>
+        </tr>
+        <tr>
+          <td class="double-subj">Программная инженерия (практ.) <br>Масло С.В. ауд 702</td>
+        </tr>
+        <tr>
+          <th class="table-light">10:15 - 11:45</th>
+          <td>Теория вероятностей и математическая статистика (лекц.) <br>Брадул Н.В. ауд 704</td>
+        </tr>
+        <tr>
+          <th rowspan="2" class="table-light">12:10 - 13:40</th>
+          <td class="first-subj">Электронный бизнес на международном рынке товаров и услуг <br>Семичастный И.Л. ауд 808</td>
+        </tr>
+        <tr>
+          <td class="double-subj">Математическое и имитационное моделирование (лекц.) <br>Брадул Н.В. ауд 702/1</td>
+        </tr>
+        <tr>
+          <th rowspan="2" class="table-light">13:55 - 15:25</th>
+          <td class="first-subj">- </td>
+        </tr>
+        <tr>
+          <td class="double-subj">Базы данных (практ.) <br>Григоренко В.А. ауд 702</td>
+        </tr>
+        <thead class="thead-light">
+          <tr>
+
+            <th class="days" colspan="2">Среда</th>
+          </tr>
+        </thead>
+        <tr>
+          <th rowspan="2" class="table-light">08:30 - 10:00</th>
+          <td class="first-subj">Базы данных <br>Григоренко В.А. ауд 808</td>
+        </tr>
+        <tr>
+          <td class="double-subj">Информационная безопасность (практ.) <br> Олейник А.Н. ауд 702</td>
+        </tr>
+        <tr>
+          <th rowspan="2" class="table-light">10:15 - 11:45</th>
+          <td class="first-subj">Программная инженерия (лекц.) <br> Елезов С.А. ауд 705</td>
+        </tr>
+        <tr>
+          <td class="double-subj">Проектирование информационных систем (практ.) <br> Литвак Е.Г. ауд 808</td>
+        </tr>
+        <tr>
+          <th rowspan="2" class="table-light">12:10 - 13:40</th>
+          <td class="first-subj">Экономика и организация предприятия (сем.) <br> Фучеджи А.И. ауд 806</td>
+        </tr>
+        <tr>
+          <td class="double-subj">Информационные системы и технологии (лекц.) <br>Семичастный И.Л. ауд 704</td>
+        </tr>
+        <thead class="thead-light">
+
+          <tr>
+            <th class="days" colspan="2">Четверг</th>
+          </tr>
+        </thead>
+        <tr>
+          <th rowspan="2" class="table-light">08:30 - 10:00</th>
+          <td class="first-subj">Программная инженерия (практ.) <br>Масло С.В. ауд 602/1</td>
+        </tr>
+        <td class="double-subj">Информационная системы и технологии (сем..)<br>Григоренко В.А. ауд 602</td>
+        <tr>
+          <th rowspan="2" class="table-light">10:15 - 11:45</th>
+          <td class="first-subj">Информационная системы и технологии (сем..)<br>Григоренко В.А. ауд 602</td>
+        </tr>
+        <tr>
+          <td class="double-subj">Экономика и организация предприятия (сем.) <br> Фучеджи А.И. ауд 508</td>
+        </tr>
+        <tr>
+          <th rowspan="2" class="table-light">12:10 - 13:40</th>
+          <td class="first-subj">Исследование операций и методы оптимизации <br>Прокопенко Е.В.(лекц.) ауд 808</td>
+        </tr>
+        <tr>
+          <td class="double-subj">Электронный бизнес на международном рынке товаров и услуг (сем.) <br>Григоренко В.А. ауд 808</td>
+        </tr>
+        <tr>
+          <th rowspan="2" class="table-light">13:55 - 15:25</th>
+          <td class="first-subj">Проектирование информационных систем (практ.) <br> Литвак Е.Г. ауд 602</td>
+        </tr>
+        <tr>
+          <td class="double-subj">Базы данных (лекц.) <br>Литвак Е.Г. ауд 602</td>
+        </tr>
+        <thead class="thead-light">
+
+          <tr>
+            <th class="days" colspan="2">Пятница</th>
+          </tr>
+        </thead>
+        <tr>
+          <th rowspan="2" class="table-light">08:30 - 10:00</th>
+          <td class="first-subj">Экономика и организация предприятия (лекц.) <br>Зубрыкина М.В. ауд 806</td>
+        </tr>
+        <tr>
+          <td class="double-subj">Проектирование информационных систем (лекц.) <br>Литвак Е.Г. ауд 602</td>
+        </tr>
+        <tr>
+          <th class="table-light">10:15 - 11:45</th>
+          <td>Исследование операций и методы оптимизации (сем.) <br>Григоренко В.А. ауд 808</td>
+        </tr>
+        <tr>
+          <th rowspan="2" class="table-light">12:10 - 13:40</th>
+          <td class="first-subj">Электронный бизнес на международном рынке товаров и услуг (сем.) <br>Григоренко В.А. 602</td>
+        </tr>
+        <tr>
+          <td class="double-subj">Системы поддержки принятия решений (сем.) <br>Петренко И.В. ауд 808</td>
+        </tr>
+        
+      </tbody>
+      
+    </table>
+  
+
+<script src="./js/script.js"></script>
+</body>
+</html>
